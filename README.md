@@ -37,5 +37,5 @@ These files, which are not included in the repositiry, are the basis for the pyt
 * washington.csv
 
 ### Credits
-This repository was created as part of the Udacity Nanodegree `Programming for Data Science with Python`.
+This repository was created as part of the Udacity Nanodegree [`Programming for Data Science with Python`](https://d20vrrgs8k4bvw.cloudfront.net/documents/en-US/Enterprise+Syllabi/Generic/Udacity+Enterprise+Syllabus+Programming+for+Data+Science+with+Python+nd104.pdf).
 
