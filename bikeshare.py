@@ -1,6 +1,6 @@
 import time
 import pandas as pd
-import os
+from os import system
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -59,7 +59,7 @@ def get_filters():
     # Setting variables here for debugging purposes and faster development
 
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    os.system('cls')
+    system('cls')
     while not valid_city:
         print("\n\nYou can now explore bikeshare data for the cities of Chicago, New York City or Washington!")
         city = input("Please enter the city you would like to explore data on: ")
@@ -83,7 +83,7 @@ def get_filters():
             print("Please try again with one of the valid options.")
             
     # TO DO: get user input for month (all, january, february, ... , june)
-    os.system('cls')
+    system('cls')
     while not valid_month:
         print("\n\nYou can explore the data for the months from january up to june or 'all'!")
         month = input("Please enter the month you would like to explore data on: ")
@@ -107,7 +107,7 @@ def get_filters():
             print("Please try again with one of the valid options.")
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    os.system('cls')
+    system('cls')
     while not valid_day:
         print("\n\nYou can explore the data for specific days of the week or 'all'!")
         day = input("Please enter the day you would like to explore data on: ")
@@ -130,7 +130,7 @@ def get_filters():
             print("Sorry, but {} is not part of the data you are able to explore.".format(day.title()))
             print("Please try again with one of the valid options.")
 
-    os.system('cls')
+    system('cls')
     print("These are your selected options: \nCity: {}\nMonth: {}\nDay: {}\n".format(city.title(), month.title(), day.title()))
     print('-'*40)
     if not development:
