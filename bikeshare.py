@@ -32,11 +32,11 @@ def five_chunker(iterable, step=5):
     """
     Gives back "step"-amount of items from "iterable" starting at start_index to start_index+step
     """
-    start_index = 0
-    while start_index < len(iterable):
-        data = iterable.iloc[start_index:start_index+5]
+    i = 0
+    while i < len(iterable):
+        data = iterable.iloc[i:i+5]
         yield data
-        start_index += step
+        i += step
 
 def get_filters():
     """
